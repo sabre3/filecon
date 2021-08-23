@@ -2,6 +2,10 @@
 #Creator and Maintainer: sabre3
 #Release: v0.1
 
+#module import examples:
+#import filecon.ifilecon as ifc
+#from filecon.ifilecon import IFile, IFileDef
+
 #CONFIG
 CRYPTO_BUFF = 8192 #hasher file block read size
 HASH_SIZE = 44 #blake2b b64 hash size in bytes (Don't change unless you modify the black2b size!)
