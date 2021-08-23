@@ -35,6 +35,9 @@ ifiledef = IFileDef('def.bin')
 
 #add a peice to a new ifile
 ifiledef.add_peice(ifile2, b'my totally legit 64 byte looking file peice')
+
+#verify file is completely contructed
+print(ifile2.verify())
 ```
 
 ### Planned improvments
