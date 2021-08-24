@@ -9,7 +9,7 @@ ifile = ifilecon.IFile('debug/test/test1.txt', 16)
 
 exit()
 
-ifile2 = IFile('debug/test1.txt', 16, hash=b'yWJloUxkew/6XV+XK5rcGTg9/8E6OGzOiqVhpHiDW2I=', size=257, start=69)
+ifile2 = ifilecon.IFile('debug/test1.txt', 16, hash=b'yWJloUxkew/6XV+XK5rcGTg9/8E6OGzOiqVhpHiDW2I=', size=257, start=69)
 #print(ifile.get_peice(2))
 
 #ifile2.add_peice(0, b'lmao')
