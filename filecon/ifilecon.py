@@ -1,6 +1,6 @@
 #A file constructor module that creates files from out of order peices using a definition file
 #Creator and Maintainer: sabre3
-#Release: v0.1 | dev
+#Release: v0.1.1
 
 #module import examples:
 #import filecon.ifilecon as ifc
@@ -140,7 +140,7 @@ class IFile:
         s.path = Path(filepath) #filepath
         s.psize = psize #file peice size
         s.start = start #start index of hashes in def
-        s.person = s.path.name.encode('utf8') #person string for blake2b
+        s.person = s.path.name.encode('utf8')[:len(s.path.name) - 16] #person string for blake2b
 
         if s.path.exists():
             s.size = s.path.stat().st_size
