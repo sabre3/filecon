@@ -1,6 +1,6 @@
 #A file constructor module that creates files from out of order peices using a definition file
 #Creator and Maintainer: sabre3
-#Release: v0.1
+#Release: v0.1 | dev
 
 #module import examples:
 #import filecon.ifilecon as ifc
