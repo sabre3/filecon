@@ -2,6 +2,8 @@
 #Creator and Maintainer: sabre3
 #Release: v0.1 | dev
 
+#TODO: Fix person to shorten file name to 16 bytes if too long
+
 #CONFIG
 CRYPTO_BUFF = 8192 #hasher file block read size
 HASH_SIZE = 44 #blake2b b64 hash size in bytes (Don't change unless you modify the black2b size!)
@@ -136,7 +138,7 @@ class IFile:
         s.path = Path(filepath) #filepath
         s.psize = psize #file peice size
         s.start = start #start index of hashes in def
-        s.person = s.path.name.encode('utf8') #person string for blake2b
+        s.person = s.path.name.encode('utf8')[:len(s.path.name) - 16] #person string for blake2b
 
         if s.path.exists():
             s.size = s.path.stat().st_size

@@ -1,12 +1,14 @@
 #debug
 
-import filecon4
-from filecon4 import IFile, IFileDef
+import ifilecon
 
 from pathlib import Path
 
 #debug
-ifile = IFile('debug/test/test1.txt', 16)
+ifile = ifilecon.IFile('debug/test/test1.txt', 16)
+
+exit()
+
 ifile2 = IFile('debug/test1.txt', 16, hash=b'yWJloUxkew/6XV+XK5rcGTg9/8E6OGzOiqVhpHiDW2I=', size=257, start=69)
 #print(ifile.get_peice(2))
 

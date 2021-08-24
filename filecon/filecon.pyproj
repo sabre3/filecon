@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>1288c3cd-e37c-4f1f-8b97-f104eb7ca6ed</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>filecon4.py</StartupFile>
+    <StartupFile>ifilecon.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -30,7 +30,7 @@
     <Compile Include="filecon3.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="filecon4.py" />
+    <Compile Include="ifilecon.py" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="debug\" />
