@@ -13,6 +13,11 @@ Using the definition file, the module can reconstruct the file from peices sent 
 - Supports any peice size (specefied in bytes)
 - Reduces definition file size by using Base64
 
+### Installing
+```Git
+python -m pip install git+https://github.com/sabre3/filecon.git@master
+```
+
 ### Import examples
 ```Python
 import filecon.ifilecon as ifc
@@ -24,11 +29,11 @@ from filecon.ifilecon import IFile, IFileDef
 #create IFile object of exisitng file using 64 byte peices
 ifile = IFile('myfile.txt', 64)
 
-#create IFile object of new file to be constructed 
-ifile2 = IFile('test/myfile.txt', ifile.psize, hash=ifile.hash, size=ifile.size, start=ifile.start)
-
 #generate a definition file from a list of IFIle objects
 IFIleDef.generate_def('def.bin', [ifile])
+
+#create IFile object of new file to be constructed 
+ifile2 = IFile('test/myfile.txt', ifile.psize, hash=ifile.hash, size=ifile.size, start=ifile.start)
 
 #create a definiton object that handles cretaing files from peices
 ifiledef = IFileDef('def.bin')
