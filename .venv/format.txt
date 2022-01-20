@@ -1,0 +1,8 @@
+The format for IFile definitions:
+
+
+[header]
+file_name;file_hash;size;psize\n
+
+[body]
+hashhashhashhash
